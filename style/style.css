@@ -4,8 +4,11 @@ li,
 .logo-section,
 .header,
 .links-section,
-.hero-section, 
-.card-section {
+.hero-section,
+.card-section,
+.cards,
+.image-card,
+.text {
   display: flex;
 }
 
@@ -28,7 +31,7 @@ a {
   align-items: center;
   font-size: 18px;
   list-style-type: none;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 li:nth-child(2) {
@@ -37,7 +40,7 @@ li:nth-child(2) {
 
 .navbar-container {
   background-color: #1f2937;
-  padding: 0% 8%;
+  padding: 0% 9%;
   flex-direction: row;
 }
 
@@ -45,6 +48,7 @@ li:nth-child(2) {
   color: #f9faf8;
   font-size: 24px;
   font-weight: bold;
+  width: 11%;
   /* margin-right: auto; */
 }
 
@@ -52,11 +56,11 @@ li:nth-child(2) {
   background-color: #1f2937;
   flex-direction: row;
   height: 48%;
-  padding: 2% 8% 5% 8%;
+  padding: 2% 9% 5% 9%;
 }
 
 .hero-text-section {
-  height: 40%;
+  /* height: 40%; */
   justify-content: flex-start;
   width: 40%;
 }
@@ -73,6 +77,7 @@ li:nth-child(2) {
   font-weight: bolder;
   flex-wrap: wrap;
   margin: 0.5% 1% 0.5% 0%;
+  margin-bottom: 25px;
 }
 
 .hero-subtext {
@@ -81,6 +86,7 @@ li:nth-child(2) {
   font-weight: 300;
   flex-wrap: wrap;
   margin: 0.5% 1% 0.5% 0%;
+  margin-bottom: 25px;
 }
 
 .hero-button {
@@ -104,7 +110,8 @@ li:nth-child(2) {
 }
 
 .card-section {
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
   padding: 0.5% 11% 5% 11%;
 }
 
@@ -112,4 +119,27 @@ li:nth-child(2) {
   color: #1f2937;
   font-size: 36px;
   font-weight: bolder;
+  text-align: center;
+}
+
+.cards {
+  gap: 52px;
+  padding: 0 9%;
+}
+
+.image-card {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-icon {
+  width: 60%;
+}
+
+.text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
