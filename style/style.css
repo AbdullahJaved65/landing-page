@@ -5,11 +5,14 @@ li,
 .header,
 .links-section,
 .hero-section,
+.hero-image-section,
 .hero-image,
 .card-section,
 .cards,
 .image-card,
-.text {
+.text,
+.quote-section,
+.quote {
   display: flex;
 }
 
@@ -28,11 +31,10 @@ a {
 }
 
 .links-section {
-  /* color: #e5e7eb; */
   align-items: center;
   font-size: 18px;
   list-style-type: none;
-  /* margin-left: auto; */
+  margin-left: auto;  
 }
 
 li:nth-child(2) {
@@ -40,35 +42,40 @@ li:nth-child(2) {
 }
 
 .navbar-container {
-  background-color: #1f2937;
+  /* background-color: #1f2937; */
+  background-color: #866483;
+  height: 17%;
   padding: 0% 9%;
   flex-direction: row;
 }
 
 .header {
+  /* align-items: top; */
   color: #f9faf8;
   font-size: 24px;
   font-weight: bold;
-  width: 15%;
-  /* margin-right: auto; */
+  height: 10%;
+  /* width: 15%; */
+  margin-left: 4px;
 }
 
 .hero-section {
-  background-color: #1f2937;
+  /* background-color: #1f2937; */
+  background-color: #866483;
   flex-direction: row;
-  height: 48%;
-  padding: 2% 9% 5% 9%;
+  height: 45%;
+  padding: 2% 9% 7% 9%;
 }
 
 .hero-text-section {
   /* height: 40%; */
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   width: 40%;
 }
 
 .hero-image-section {
   /* height: 30%; */
-  justify-content: flex-end;
+  /* justify-content: center; */
   width: 60%;
 }
 
@@ -85,15 +92,16 @@ li:nth-child(2) {
   color: #e5e7eb;
   font-size: 18px;
   font-weight: 300;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin: 0.5% 1% 0.5% 0%;
   margin-bottom: 25px;
+  text-align: left;
 }
 
 .hero-button {
   background-color: #3882f6;
   border: none;
-  border-radius: 10%;
+  border-radius: 30px;
   color: #f9faf8;
   font-weight: 800;
   padding: 5px 20px;
@@ -104,9 +112,9 @@ li:nth-child(2) {
 }
 
 .hero-image {
-  justify-content: flex-end;
-  height: 100%;
-  padding-left: 2%;
+  align-self: center;
+  /* height: 100%; */
+  margin-left: 8%;
   width: 100%;
 }
 
@@ -144,4 +152,21 @@ li:nth-child(2) {
   align-items: baseline;
   text-align: center;
   flex-wrap: wrap;
+}
+
+.quote-section {
+  background-color: #e5e7eb;
+  flex-direction: column;
+  height: 50%;
+  padding: 5% 10%;
+}
+
+.quote-para {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+.author-name {
+  text-align: right;
 }
