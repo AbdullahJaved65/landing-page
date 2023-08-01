@@ -12,7 +12,11 @@ li,
 .image-card,
 .text,
 .quote-section,
-.quote {
+.quote,
+.quote-para,
+/* .quote-img, */
+.call-for-action,
+.cfa-main-container {
   display: flex;
 }
 
@@ -34,7 +38,7 @@ a {
   align-items: center;
   font-size: 18px;
   list-style-type: none;
-  margin-left: auto;  
+  margin-left: auto;
 }
 
 li:nth-child(2) {
@@ -99,12 +103,13 @@ li:nth-child(2) {
 }
 
 .hero-button {
-  background-color: #3882f6;
+  /* background-color: #3882f6; */
+  background-color: #c46641;
   border: none;
-  border-radius: 30px;
+  border-radius: 8px;
   color: #f9faf8;
   font-weight: 800;
-  padding: 5px 20px;
+  padding: 11px 20px;
   text-align: center;
   text-decoration: none;
   margin: 0.5% 1% 0.5% 0%;
@@ -155,18 +160,85 @@ li:nth-child(2) {
 }
 
 .quote-section {
-  background-color: #e5e7eb;
+  /* background-color: #e5e7eb; */
+  background-color: #f9e3d0;
   flex-direction: column;
-  height: 50%;
-  padding: 5% 10%;
+  height: 60%;
+  padding: 7% 10%;
 }
 
 .quote-para {
   color: #1f2937;
   font-size: 36px;
   font-weight: lighter;
+  width: 80%;
+}
+
+.quote-img {
+  /* height: 30%; */
+  width: 30%;
 }
 
 .author-name {
   text-align: right;
+}
+
+.call-for-action {
+  flex-direction: row;
+  justify-content: center;
+  padding: 7% 10%;
+}
+
+.cfa-main-container {
+  background-color: #c46641;
+  border-radius: 8px;
+  height: 150px;
+  padding: 1% 8%;
+  justify-content: center;
+  width: 100%;
+}
+
+.cfa-text {
+  align-self: center;
+  text-align: left;
+  width: 60%;
+}
+
+.cfa-text h4,
+p {
+  color: #f9faf8;
+  margin-top: 0.25%;
+  margin-bottom: 0.25%;
+}
+
+.cfa-img-section {
+  align-self: center;
+  padding-bottom: 12px;
+  /* height: 40%; */
+  width: 26%;
+}
+
+.cfa-img {
+  align-self: center;
+  height: fit-content;
+  width: 100%;
+}
+
+.cfa-btn {
+  align-self: center;
+  padding-left: 70px;
+  width: 20%;
+}
+
+.cfa-btn button {
+  background-color: #c46641;
+  border: solid 1px white;
+  border-radius: 8px;
+  color: #f9faf8;
+  font-weight: 800;
+  padding: 11px 20px;
+  text-align: center;
+  text-decoration: none;
+  /* margin: 0.5% 1% 0.5% 0%; */
+  /* width: 25%; */
 }
